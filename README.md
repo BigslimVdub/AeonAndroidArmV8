@@ -10,3 +10,5 @@ I have not personally tested these as I have no root access on Oreo 8.0 on my de
 It is recommended at least 2mb ram for best function on your device. 
 
 Have fun living the Aeon Lifestyle on your device!
+
+![Build Success](https://github.com/BigslimVdub/AeonAndroidArmV8/blob/master/android%20build.png)
