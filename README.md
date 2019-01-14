@@ -7,7 +7,7 @@ Build instructions are found [here](https://github.com/BigslimVdub/AeonAndroidAr
 
 I have not personally tested these as I have no root access on Oreo 8.0 on my device. Please give feedback if they work. Files are executables that must be fun from either ADB shell or a Terminal Emulator on your device. 
 
-It is recommended at least 2mb ram for best function on your device. 
+It is recommended at least 2gb ram for best function on your device. 
 
 Have fun living the Aeon Lifestyle on your device!
 
