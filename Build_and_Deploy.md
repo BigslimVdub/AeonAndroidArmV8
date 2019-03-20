@@ -10,7 +10,7 @@ set to be in the v0.12.9.0 point release. Many of the build maker files and dock
 
 Install all Linux Dependencies for Aeon CLI:
 ```
-sudo apt update && sudo apt install build-essential cmake git pkg-config libboost-all-dev libssl-dev libzmq3-dev libunbound-dev libsodium-dev libminiupnpc-dev libunwind8-dev liblzma-dev libreadline6-dev libldns-dev libexpat1-dev doxygen graphviz libpcsclite-dev
+sudo apt update && sudo apt install build-essential cmake git pkg-config libboost-all-dev libssl-dev libzmq3-dev libunbound-dev libsodium-dev libminiupnpc-dev libunwind8-dev liblzma-dev libreadline6-dev libldns-dev libexpat1-dev doxygen graphviz libpcsclite-dev libnorm-dev
 ```
 
 Pull a fresh recursive pull of Aeon CLI code:
@@ -25,7 +25,7 @@ cd Aeon && git submodule init && git submodule update
 
 Checkout the latest version of code (or whatever version you want to build post 12.9):
 ```
-Git checkout v0.12.9.0
+Git checkout v0.12.9.0-aeon
 ```
 Now we have Aeon CLI downloaded and ready to roll, we need to install Docker so can we build it all. Please note that
 this was done on Ubuntu 18.10 so the specific packages may be different on older or newer systems. 
