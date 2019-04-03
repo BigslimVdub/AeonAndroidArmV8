@@ -2,11 +2,9 @@
 
 First we need to create a Linux VM if you haven’t already or just use linux as your main OS if that is your style.
 For this specific build with binaries I used Ubuntu 18.10. Please note that some of the dependencies will be different
-if you are using 16.04 or other linux flavors. This build was done with the latest v0.12.8.0 and Stoffu's [Upstream Merge #3](https://github.com/aeonix/aeon/pull/90)
-set to be in the v0.12.9.0 point release. Many of the build maker files and docker files were updated for the latest versions. 
+if you are using 16.04 or other linux flavors. This build was done with the latest v0.12.9.0 release. Many of the build maker files and docker files were updated for the latest versions for the 12.9 release so we can build this now. 
 
-### Also please note that this build has not been successfully tested on an Android device but the binaries did build successfully. 
-
+## Building AeonD on Docker with Ubuntu 18.10
 
 Install all Linux Dependencies for Aeon CLI:
 ```
@@ -106,22 +104,21 @@ adb devices
 ```
 If the device shows and no errors are reported, copy the binaries to the sdcard:
 ```
-adb push ./bin /sdcard/aeon/
+adb push ./bin /data/local/tmp
 ```
-Or you can manually move the files by drag and drop to your device SD card folder. Also note that some SD cards are not in /sdcard/0/aeon. Some external SD cards can be /storage/SCCARDNUMBER/. If you download “Terminal Emulator” from the play store you can cd to find your way to the correct card location. I like to add an /Aeon/ folder before through “my files” and the external SD card so I can find the sd card easier.
+If you download “Terminal Emulator” from the play store you can cd to find your way to the correct folder location via your device.
 
-Run aeond
+## Run aeonD via Android Debug Bridge (ADB)
 
-There are different ways of running cross compiled apps directly. Some phones do not let you write to the init.d files so you can't set aeond to start on startup.
+There are different ways of running cross compiled apps directly. Some phones do not let you write to the init.d files so you can't set aeonD to start on startup. If you have a rooted device, you should be able to place the files in and run in the /sdcard folder (your "My Files" Internal storage folder). 
+Open a terminal on your desktop after connecting your device to your PC and run these commands:
 
 ```
 adb shell
 
-su
+cd /data/local/tmp/bin
 
-cd /sdcard/aeon/
-
-./aeond --data-dir /sdcard/0/aeon/
+./aeond --data-dir /data/local/tmp/bin
 ```
 
 You should now have aeond running successfully on an Android device from your computer and adb bridge!
@@ -129,7 +126,6 @@ You can open another adb shell, change directory back to the aeon binaries and r
 
 If you want to run this from your device, you need to install a terminal emulator such as ``ADB Shell`` or 
 ``Terminal Emulator`` from the Google Play store. You will also need to give permissions to the folder you are running the 
-Daemon and Wallet files to. You may need root privileges for daemon to work if you get ``permission denied`` messages. This means you need
-to root your device. 
+Daemon and Wallet files to through ABD shell. You may need root privileges for daemon to work if you get ``permission denied`` messages. This means you need to root your device. 
 
-Please test and run these binaries. If functioning they may be added to the official binaries eventually.
+Please test and run these binaries. If enough community interest, this may be added to the official binaries eventually.
