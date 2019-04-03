@@ -7,7 +7,7 @@ Build instructions are found [here](https://github.com/BigslimVdub/AeonAndroidAr
 
 I have personally tested these and they work using ADB when placed in the /data/local/tmp directory. 
 
-Please give feedback if they work on your device. Files are executables that must be fun from either ADB shell or a Terminal Emulator on your device. 
+Please give feedback if they work on your device. Files are executables that must be run from either ADB shell or a Terminal Emulator on your device. 
 
 It is recommended at least 2gb ram for best function on your device. Testing on Galaxy S7 works good. Approximately 200 blocks per 10 seconds sync time on recent block sizes with standard sync. 
 
