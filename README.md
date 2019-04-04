@@ -18,3 +18,9 @@ Have fun living the Aeon Lifestyle on your device!
 ![AeonD syncing on ADB](https://github.com/BigslimVdub/AeonAndroidArmV8/blob/master/AeonD%20syncing%20on%20ADB.png)
 
 ![Build Success](https://github.com/BigslimVdub/AeonAndroidArmV8/blob/master/android%20build.png)
+
+
+## Donations are alway welcomed for efforts presented. 
+
+Aeon:
+``` XnYEEv8o6oSNZarQi2zGHV7dAx5SmYVkLPrHsXcZcVK53UPo1ycU9Q6HyDwZKcrByxj7QJWCvJ8Fm7vzLkbeZcuN3Au7cTorC ```
