@@ -62,8 +62,9 @@ Docker run hello-world
 If you get an error like this:
 ```
 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock:
-The docker group is not working properly, you can google for this solution or drop to root with sudo su
 ```
+The docker group is not working properly, you can google for this solution or drop to root with sudo su
+
 
 Install ABD (Android Debug Bridge):
 ```
