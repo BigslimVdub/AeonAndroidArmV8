@@ -73,7 +73,7 @@ sudo apt install adb
 
 Next we need to build the Binaries. This will take some time especially if using a VM:
 ```
-cd utils/build_scripts/ && docker build -f android64.Dockerfile -t aeon-android .  (Wait quite some time for it to build)
+docker build -f utils/build_scripts/android64.Dockerfile -t aeon-android .  (Wait quite some time for it to build)
 ```
 After it builds we need to create the files docker built:
 ```
@@ -81,8 +81,7 @@ docker create -it --name aeon-android aeon-android bash
 ```
 Now we need to copy the files from the docker to the proper folder in linux:
 ```
-cd ../../
-docker cp aeon-android:/opt/android/aeon/build/release/bin .
+docker cp aeon-android:/src/build/release/bin .
 ```
 
 Now check that the binaries have been copied out to the docker container:
